@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif; /*所有網頁內容的預設字形*/
+  color: brown;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: #994fa8;
+  color: brown;
+  padding: 1em;
+  text-align: center;
+  border: 2px solid #994fa8;
+}
+
+.container {
+  width: 50%;
+  border: 2px solid #8f6da7;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #8f6da7;
+  overflow: hidden;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+section {
+  padding: 1em;
+}
+
+.content {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+  padding: 1em;
+}
+
+.left-column img {
+  width: 100%;
+  height: 100%; /* 圖片填滿整個左邊 */
+  object-fit: cover; /* 確保圖片不變形 */
+}
+
+.right-column {
+  flex: 1;
+  padding: 1em;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end; /* 按鈕改到右下方 */
+  align-items: flex-end; /* 按鈕改到右下方 */
+}
+
+.button {
+  background-color: brown;
+  width: 1cm; /* 設定按鈕寬度為1公分 */
+  height: 1cm; /* 設定按鈕高度為1公分 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  font-size: 8px; /* 縮小文字大小 */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
